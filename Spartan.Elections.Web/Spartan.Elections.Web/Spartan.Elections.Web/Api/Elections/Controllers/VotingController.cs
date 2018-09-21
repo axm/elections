@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 
 namespace Spartan.Elections.Web.Api.Elections.Controllers
 {
-    [Route("api/v1/elections")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/elections/[controller]")]
     [Authorize]
     [ApiController]
     public class VotingController : ControllerBase

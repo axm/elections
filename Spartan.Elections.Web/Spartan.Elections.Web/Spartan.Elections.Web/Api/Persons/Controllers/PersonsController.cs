@@ -5,7 +5,8 @@ using System.Threading.Tasks;
 
 namespace Spartan.Elections.Web.Persons.Controllers
 {
-    [Route("api/v1/[controller]")]
+    [ApiVersion("1.0")]
+    [Route("api/v{version:apiVersion}/[controller]")]
     [ApiController]
     public class PersonsController : ControllerBase
     {

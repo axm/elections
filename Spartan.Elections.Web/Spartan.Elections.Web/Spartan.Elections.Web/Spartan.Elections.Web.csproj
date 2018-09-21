@@ -6,9 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Api\Candidates\" />
-    <Folder Include="Api\Parties\Controllers\" />
-    <Folder Include="Api\Parties\Requests\" />
     <Folder Include="Api\Settings\Controllers\" />
     <Folder Include="Api\Settings\Models\" />
     <Folder Include="Api\Settings\Requests\" />
