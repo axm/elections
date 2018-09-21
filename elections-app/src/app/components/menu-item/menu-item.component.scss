@@ -1,0 +1,22 @@
+@import "../../styles/colors";
+
+:host {
+	padding: 20px 20px;
+	display: block;
+
+	&:hover {
+		border: 1px solid red;
+
+		.vertical-menu-item {
+			opacity: .7;
+		}
+	}
+}
+
+.vertical-menu-item {
+	color: $mainForegroundColor;
+
+	&:hover, &:visited, &:link, &:active {
+		text-decoration: none;
+	}
+}
