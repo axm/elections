@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Api\Candidates\" />
+    <Folder Include="Api\Parties\Controllers\" />
+    <Folder Include="Api\Parties\Requests\" />
+    <Folder Include="Api\Settings\Controllers\" />
+    <Folder Include="Api\Settings\Models\" />
+    <Folder Include="Api\Settings\Requests\" />
+    <Folder Include="Filters\Authorization\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Spartan.Parties\Spartan.Parties.Client\Spartan.Parties.Client.csproj" />
+    <ProjectReference Include="..\..\..\Spartan.Voting\src\Spartan.Voting.Client\Spartan.Voting.Client.csproj" />
+  </ItemGroup>
+
+</Project>
