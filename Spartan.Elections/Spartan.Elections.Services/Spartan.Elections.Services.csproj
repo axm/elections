@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Mapping\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="RabbitMQ.Client" Version="5.1.0" />
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+    <PackageReference Include="Spartan.Azure" Version="1.0.5" />
+    <PackageReference Include="Spartan.Mappings" Version="1.0.6" />
+    <PackageReference Include="StackExchange.Redis" Version="1.2.6" />
+    <PackageReference Include="Validation" Version="2.4.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.Caching\Spartan.Caching.csproj" />
+    <ProjectReference Include="..\Spartan.Elections.Client\Spartan.Elections.Client.csproj" />
+  </ItemGroup>
+
+</Project>

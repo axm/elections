@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <IsPackable>true</IsPackable>
+    <NuspecFile>../Spartan.Candidates.Client.nuspec</NuspecFile>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <Platform>x64</Platform>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.Candidates.Command.Client\Spartan.Candidates.Command.Client.csproj" />
+    <ProjectReference Include="..\Spartan.Candidates.Query.Client\Spartan.Candidates.Query.Client.csproj" />
+  </ItemGroup>
+
+</Project>

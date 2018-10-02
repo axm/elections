@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-menu.component.scss']
 })
 export class MainMenuComponent implements OnInit {
-  menuItems = ["Monitoring", "Elections", "Persons", "Settings", "Log Out"];
+  menuItems = ["Dashboard", "Monitoring", "Elections", "Persons", "Settings", "Log Out"];
   constructor() { }
 
   ngOnInit() {

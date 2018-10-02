@@ -1,15 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
-using Microsoft.Extensions.Options;
+using Spartan.Elections.Web.Api.v1.Middleware;
 
 namespace Spartan.Elections.Web
 {
@@ -42,6 +36,7 @@ namespace Spartan.Elections.Web
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseMiddleware<FeatureSwitchMiddleware>();
         }
     }
 }

@@ -6,15 +6,16 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Api\Settings\Controllers\" />
-    <Folder Include="Api\Settings\Models\" />
-    <Folder Include="Api\Settings\Requests\" />
+    <Folder Include="Api\v1\Settings\Controllers\" />
+    <Folder Include="Api\v1\Settings\Models\" />
+    <Folder Include="Api\v1\Settings\Requests\" />
     <Folder Include="Filters\Authorization\" />
     <Folder Include="wwwroot\" />
   </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="2.3.0" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.0" />
   </ItemGroup>
 

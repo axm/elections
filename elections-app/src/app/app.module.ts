@@ -7,20 +7,20 @@ import { MainMenuComponent } from './components/main-menu/main-menu.component';
 import { MenuItemComponent } from './components/menu-item/menu-item.component';
 import { MainComponent } from './components/main/main.component';
 import { MonitoringModule } from './modules/monitoring/monitoring.module';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { AppRoutingModule } from './app-routing.module';
 
-const routes: Routes = [
-
-]
 
 @NgModule({
   declarations: [
     AppComponent,
     MainMenuComponent,
     MenuItemComponent,
-    MainComponent
+    MainComponent,
+    DashboardComponent
   ],
   imports: [
-	RouterModule.forRoot(routes),
+	AppRoutingModule,
 	BrowserModule,
 	MonitoringModule
   ],

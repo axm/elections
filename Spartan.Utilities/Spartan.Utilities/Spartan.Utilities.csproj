@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461</TargetFrameworks>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <Deterministic>False</Deterministic>
+    <PackageId>Spartan.Utilities</PackageId>
+    <Title>Utilities</Title>
+    <Authors>Spartan</Authors>
+    <Description>Utility library.</Description>
+    <Copyright>Spartan</Copyright>
+    <PackageTags>utilities;configuration</PackageTags>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NuspecFile>../Spartan.Utilities.nuspec</NuspecFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.0.12" />
+    <PackageReference Include="Validation" Version="2.4.18" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System.Configuration" />
+  </ItemGroup>
+</Project>

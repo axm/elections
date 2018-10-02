@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package>
+    <metadata>
+        <id>Spartan.PartyMembers.Client</id>
+        <version>1.0.1</version>
+        <authors>Spartan</authors>
+        <owners>Spartan</owners>
+        <licenseUrl>https://www.google.co.uk</licenseUrl>
+        <projectUrl>https://www.project-athena.co.uk</projectUrl>
+        <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>System to track and mange and analyze election results.</description>
+        <releaseNotes>Point release.</releaseNotes>
+        <copyright>Copyright 2018</copyright>
+        <tags>configuration;utilities;guid</tags>
+        <dependencies>
+            <dependency id="Microsoft.ServiceFabric.Services" version="3.0.456" />
+            <dependency id="Microsoft.ServiceFabric.Services.Remoting" version="3.0.456" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="Spartan.PartyMembers.Command.Client\bin\x64\Release\net461\Spartan.PartyMembers.Command.Client.dll" target="lib\Spartan.PartyMembers.Command.Client.dll" />
+        <file src="Spartan.PartyMembers.Query.Client\bin\x64\Release\net461\Spartan.PartyMembers.Query.Client.dll" target="lib\Spartan.PartyMembers.Query.Client.dll" />
+    </files>
+</package>

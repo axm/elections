@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net461</TargetFrameworks>
+    <Platforms>x64</Platforms>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.Api.Parties.Contracts.Command\Spartan.Api.Parties.Contracts.Command.csproj" />
+    <ProjectReference Include="..\Spartan.Api.Parties.Contracts.Query\Spartan.Api.Parties.Contracts.Query.csproj" />
+    <ProjectReference Include="..\Spartan.Parties.Types\Spartan.Parties.Types.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.0.12" />
+  </ItemGroup>
+</Project>

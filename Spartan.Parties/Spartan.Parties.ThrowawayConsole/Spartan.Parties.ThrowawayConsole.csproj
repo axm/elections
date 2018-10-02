@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net461</TargetFramework>
+
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+
+    <Platforms>x64;x64</Platforms>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LangVersion>7.2</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LangVersion>7.1</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoFixture" Version="4.0.1" />
+    <PackageReference Include="SimpleInjector" Version="4.0.12" />
+    <PackageReference Include="Spartan.ServiceFabric" Version="1.0.5" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.Api.Parties.Contracts.Command\Spartan.Api.Parties.Contracts.Command.csproj" />
+    <ProjectReference Include="..\Spartan.Api.Parties.Contracts.Query\Spartan.Api.Parties.Contracts.Query.csproj" />
+  </ItemGroup>
+</Project>

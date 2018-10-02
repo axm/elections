@@ -1,0 +1,3 @@
+﻿N - New Person
+P - Person Created Event
+Q - Quit app

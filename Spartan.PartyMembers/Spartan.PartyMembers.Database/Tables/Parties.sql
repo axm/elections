@@ -1,0 +1,4 @@
+﻿CREATE TABLE [dbo].[Parties]
+(
+	[Id] INT NOT NULL PRIMARY KEY
+)

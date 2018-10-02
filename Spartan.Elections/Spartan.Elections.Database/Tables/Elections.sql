@@ -1,0 +1,7 @@
+﻿CREATE TABLE [dbo].[Elections]
+(
+	[ElectionId] UNIQUEIDENTIFIER NOT NULL PRIMARY KEY,
+	[Name] NVARCHAR(512) NOT NULL,
+	[Date] DATE NOT NULL,
+	[TimestampCreated] DATETIME NOT NULL
+)

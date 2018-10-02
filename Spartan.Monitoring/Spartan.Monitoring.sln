@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2026
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Spartan.Monitoring", "Spartan.Monitoring\Spartan.Monitoring.sfproj", "{16E9AE8C-7B61-44FC-A582-7E294E45291C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spartan.Monitoring.Query", "src\Spartan.Monitoring.Query\Spartan.Monitoring.Query.csproj", "{7EDF9403-FEF3-4B6E-A4D0-B07FAA815DC2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Debug|x64.ActiveCfg = Debug|x64
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Debug|x64.Build.0 = Debug|x64
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Debug|x64.Deploy.0 = Debug|x64
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Release|x64.ActiveCfg = Release|x64
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Release|x64.Build.0 = Release|x64
+		{16E9AE8C-7B61-44FC-A582-7E294E45291C}.Release|x64.Deploy.0 = Release|x64
+		{7EDF9403-FEF3-4B6E-A4D0-B07FAA815DC2}.Debug|x64.ActiveCfg = Debug|x64
+		{7EDF9403-FEF3-4B6E-A4D0-B07FAA815DC2}.Debug|x64.Build.0 = Debug|x64
+		{7EDF9403-FEF3-4B6E-A4D0-B07FAA815DC2}.Release|x64.ActiveCfg = Release|x64
+		{7EDF9403-FEF3-4B6E-A4D0-B07FAA815DC2}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66C1BE60-9E3F-4656-809F-E297FC242124}
+	EndGlobalSection
+EndGlobal

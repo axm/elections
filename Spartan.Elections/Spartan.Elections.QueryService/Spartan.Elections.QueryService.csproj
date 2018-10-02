@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net461</TargetFramework>
+    <Platform>x64</Platform>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.ServiceFabric.Services.Remoting" Version="3.1.274" />
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+    <PackageReference Include="Spartan.Azure" Version="1.0.5" />
+    <PackageReference Include="Spartan.Mappings" Version="1.0.6" />
+    <PackageReference Include="Validation" Version="2.4.18" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.Elections.Query.Client\Spartan.Elections.Query.Client.csproj" />
+    <ProjectReference Include="..\Spartan.Elections.Services\Spartan.Elections.Services.csproj" />
+    <ProjectReference Include="..\Spartan.Elections.Types\Spartan.Elections.Types.csproj" />
+  </ItemGroup>
+
+</Project>

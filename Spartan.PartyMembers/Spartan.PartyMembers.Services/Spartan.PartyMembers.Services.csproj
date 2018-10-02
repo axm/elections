@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFrameworks>net471</TargetFrameworks>
+    <Platforms>x64</Platforms>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+    <PackageReference Include="Validation" Version="2.4.18" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Spartan.PartyMembers.Command.Client\Spartan.PartyMembers.Command.Client.csproj" />
+    <ProjectReference Include="..\Spartan.PartyMembers.Data\Spartan.PartyMembers.Data.csproj" />
+    <ProjectReference Include="..\Spartan.PartyMembers.Validation\Spartan.PartyMembers.Validation.csproj" />
+  </ItemGroup>
+</Project>
