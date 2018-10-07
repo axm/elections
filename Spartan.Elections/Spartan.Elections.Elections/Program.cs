@@ -22,6 +22,9 @@ namespace Spartan.Elections.Elections
                 ServiceRuntime.RegisterServiceAsync("Spartan.Elections.ElectionsType",
                     context => new ElectionsService(context, container)).GetAwaiter().GetResult();
 
+                ServiceRuntime.RegisterServiceAsync("Spartan.Elections.OpenElectionsType",
+                    context => new OpenElectionsService(context, container)).GetAwaiter().GetResult();
+
                 ServiceEventSource.Current.ServiceTypeRegistered(Process.GetCurrentProcess().Id, typeof(ElectionsService).Name);
 
                 // Prevents this host process from terminating so services keep running.

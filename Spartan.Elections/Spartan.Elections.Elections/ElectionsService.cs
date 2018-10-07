@@ -10,13 +10,14 @@ using Spartan.Elections.Query.Client;
 using Spartan.Elections.Services.Elections;
 using SimpleInjector;
 using Microsoft.ServiceFabric.Services.Remoting.Runtime;
+using Spartan.ServiceFabric;
 
 namespace Spartan.Elections.Elections
 {
     /// <summary>
     /// An instance of this class is created for each service instance by the Service Fabric runtime.
     /// </summary>
-    internal sealed class ElectionsService : StatelessService, IElectionsCommandService, IElectionsQueryService
+    internal sealed class ElectionsService : SpartanStatelessService, IElectionsCommandService, IElectionsQueryService
     {
         private readonly IElectionsService _electionsService;
 
@@ -30,11 +31,5 @@ namespace Spartan.Elections.Elections
         public Task<GetElectionResponse> GetElection(GetElectionRequest request) => _electionsService.GetElectionAsync(request);
 
         public Task<GetElectionsResponse> GetElections(GetElectionsRequest request) => _electionsService.GetElectionsAsync(request);
-
-        /// <summary>
-        /// Optional override to create listeners (e.g., TCP, HTTP) for this service replica to handle client or user requests.
-        /// </summary>
-        /// <returns>A collection of listeners.</returns>
-        protected override IEnumerable<ServiceInstanceListener> CreateServiceInstanceListeners() => this.CreateServiceRemotingInstanceListeners();
     }
 }

@@ -93,6 +93,7 @@
     <Reference Include="System.ServiceModel" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="OpenElectionsService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ElectionsService.cs" />
     <Compile Include="Program.cs" />
@@ -105,6 +106,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Spartan.ServiceFabric\Spartan.ServiceFabric\Spartan.ServiceFabric.csproj">
+      <Project>{6248B442-78D3-4FB5-92D9-3C6799AE2982}</Project>
+      <Name>Spartan.ServiceFabric</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Spartan.Elections.Client\Spartan.Elections.Client.csproj">
       <Project>{66982B85-053F-4BA7-A739-D43B8AFB8B8D}</Project>
       <Name>Spartan.Elections.Client</Name>

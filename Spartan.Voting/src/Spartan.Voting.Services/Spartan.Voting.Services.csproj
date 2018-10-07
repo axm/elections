@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="SimpleInjector" Version="4.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Spartan.Blobs\src\Spartan.Blobs\Spartan.Blobs.csproj" />
+    <ProjectReference Include="..\..\..\Spartan.Elections\Spartan.Elections.Client\Spartan.Elections.Client.csproj" />
+    <ProjectReference Include="..\Spartan.Voting.Client\Spartan.Voting.Client.csproj" />
+  </ItemGroup>
+
+</Project>

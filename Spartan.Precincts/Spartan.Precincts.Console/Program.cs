@@ -1,19 +1,31 @@
-﻿using Spartan.Messaging.RabbitMq;
+﻿using Spartan.Messaging.Implementation;
 using Spartan.Messaging.RabbitMq.Config;
+using Spartan.Messaging.RabbitMq.Implementation;
+using Spartan.Precincts.Client.Events;
+using Spartan.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Spartan.Precincts.Console
 {
     class Program
     {
-        static void Main(string[] args)
+        static async Task Main(string[] args)
         {
-            SetupRabbitMq();
+            var messageDispatcher = new MessageDispatcher<PrecinctVoteCompleteEvent>(
+                new ConnectionCreator(),
+                new SerializationService()
+            );
+
+            await messageDispatcher.DispatchAsync(new PrecinctVoteCompleteEvent
+            {
+                EventTimestamp = DateTime.UtcNow,
+                PrecinctId = Guid.NewGuid().ToString()
+            });
+
+            //SetupRabbitMq();
         }
 
         private static void SetupRabbitMq()
