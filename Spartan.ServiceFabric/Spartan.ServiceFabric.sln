@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dependencies", "Dependencie
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spartan.Serialization", "..\Spartan.Serialization\src\Spartan.Serialization\Spartan.Serialization.csproj", "{988D2233-1FB7-4151-ABE5-9F5890CD1429}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Spartan.Messaging", "..\Spartan.Messaging\src\Spartan.Messaging\Spartan.Messaging.csproj", "{72DBAC4B-3881-4C47-B8F2-9CC8443192AA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -23,12 +25,17 @@ Global
 		{988D2233-1FB7-4151-ABE5-9F5890CD1429}.Debug|x64.Build.0 = Debug|x64
 		{988D2233-1FB7-4151-ABE5-9F5890CD1429}.Release|x64.ActiveCfg = Release|x64
 		{988D2233-1FB7-4151-ABE5-9F5890CD1429}.Release|x64.Build.0 = Release|x64
+		{72DBAC4B-3881-4C47-B8F2-9CC8443192AA}.Debug|x64.ActiveCfg = Debug|x64
+		{72DBAC4B-3881-4C47-B8F2-9CC8443192AA}.Debug|x64.Build.0 = Debug|x64
+		{72DBAC4B-3881-4C47-B8F2-9CC8443192AA}.Release|x64.ActiveCfg = Release|x64
+		{72DBAC4B-3881-4C47-B8F2-9CC8443192AA}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{988D2233-1FB7-4151-ABE5-9F5890CD1429} = {AE7A2DCE-56A1-4920-99B4-A58F6512A6C9}
+		{72DBAC4B-3881-4C47-B8F2-9CC8443192AA} = {AE7A2DCE-56A1-4920-99B4-A58F6512A6C9}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8D8F717-A87B-4C08-AC9B-F574277BC61D}

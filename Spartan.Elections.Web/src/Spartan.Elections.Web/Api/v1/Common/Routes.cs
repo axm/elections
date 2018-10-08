@@ -2,7 +2,7 @@
 {
     public static class Routes
     {
-        private const string Root = "api/";
+        private const string Root = "api";
 
         public const string Elections = Root + "/elections";
         public const string Candidates = Root + "/candidates";
